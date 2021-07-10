@@ -71,7 +71,7 @@ let chart = new Chart(primeiroGrafico,{
 
 let segundoGrafico = document.getElementById('segundoGrafico').getContext('2d');
 let chart2 = new Chart(segundoGrafico,{
-    type: "line",
+    type: "bar",
     data:{
         labels:dia,
 
@@ -107,7 +107,8 @@ let chart3 = new Chart(heartRate,{
         datasets:[{
             label:"Heart rate",
             data: bpm,
-            backgroundColor:"#ACADFF"
+            backgroundColor: 'rgba(133, 135, 220, 0.4)',
+            borderColor: '#8587DC'
         }]
     },
     options:{

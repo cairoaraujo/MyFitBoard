@@ -23,7 +23,13 @@ nav{
     overflow: hidden;
     transition: width 0.5s;
 }
-
+nav h4{
+    color: white;
+    font-size:20px;
+    display: block;
+    padding: 12 10 10 12;
+    text-align: center;
+}
 nav a{
     color:white;
     font-size:20px;
@@ -86,5 +92,11 @@ h1{
 }
 #profile-img{
     border-radius:150px;
-    justify-content: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#profile-data{
+    color:white;
+    font-size:12px;
 }
