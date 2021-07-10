@@ -2,13 +2,39 @@ body{
     margin: 0 !important;
     padding:0;
     background-color: rgb(245, 245, 245);
+    font-family: 'Noto Sans', sans-serif;
 }
 
+a{
+    text-decoration: none;
+}
+header{
+    background-color: #200E32;
+}
+
+nav{
+    height: 100%;
+    width:0;
+    background-color: #200E32;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index: 1;
+    overflow: hidden;
+    transition: width 0.5s;
+}
+
+nav a{
+    color:white;
+    font-size:20px;
+    display: block;
+    padding: 12px 10px 12px 32px;
+}
 canvas{
 
     border: 1px solid gray;
     background: white;
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 1);
+    box-shadow: 3px 3px 20px rgba(0, 0, 0, 1);
 }
 
 #container{
@@ -17,6 +43,7 @@ canvas{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    transition: margin 0.5s;
 
 }
 .chartArea{
@@ -29,5 +56,35 @@ h1{
 #menu{
     color:white;
     margin:0;
-    background-color: #5C2F99;
+    background-color: #200E32;
+}
+#menu2{
+    background-color:#200E32;
+}
+.btn-openMenu{
+    color:white;
+    font-size: 25px;
+}
+.btn-closeMenu{
+    color:white;
+    font-size: 25px;
+    padding: 10px 10px 30px 30px;
+}
+#dashHeader{
+    margin:0;
+    display: flex;
+    justify-content:flex-start;
+    padding: 10px 10px 30px 30px;
+    transition: margin 0.5s;
+}
+#title{
+    text-align: center;
+    font-size:30px;
+}
+#content{
+    transition: margin 0.7s;
+}
+#profile-img{
+    border-radius:150px;
+    justify-content: center;
 }

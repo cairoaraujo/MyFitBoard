@@ -48,7 +48,7 @@ let chart = new Chart(primeiroGrafico,{
         datasets:[{
             label:"Gasto calórico",
             data: calorias,
-            backgroundColor:"#47E66F"
+            backgroundColor:"#8587DC"
         }]
     },
     options:{
@@ -78,7 +78,7 @@ let chart2 = new Chart(segundoGrafico,{
         datasets:[{
             label:"Distância Percorrida",
             data: distance,
-            backgroundColor:"#EB8700"
+            backgroundColor:"#8587DC"
         }]
     },
     options:{
@@ -107,7 +107,7 @@ let chart3 = new Chart(heartRate,{
         datasets:[{
             label:"Heart rate",
             data: bpm,
-            backgroundColor:"yellow"
+            backgroundColor:"#ACADFF"
         }]
     },
     options:{
