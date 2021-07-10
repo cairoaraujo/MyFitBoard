@@ -9,7 +9,24 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
 </head>
 <body>
-    <canvas id="primeiroGrafico"></canvas>
+    <div id="menu">
+        <h1>MyFitBoard - v1.0</h1>
+    </div>
+    <div id="container">
+        <div class="chartArea">
+            <h2>Gasto calórico</h2>
+            <canvas id="primeiroGrafico"></canvas>
+        </div>
+        <div class="chartArea">
+            <h2>Distância percorrida</h2>
+            <canvas id="segundoGrafico"></canvas>
+        </div>
+        <div class="chartArea">
+            <h2>Media de batimentos cardíacos</h2>
+            <canvas id="heartRate"></canvas>
+        </div>
+
+    </div>
     <script src="index.js"></script>
     
 </body>
