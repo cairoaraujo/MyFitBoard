@@ -31,11 +31,7 @@ function main(){
         distance[i] = meusDados.distance
         return distance[i]
     })
-
-    console.log(calorias)
-    console.log(dia)
-    console.log(bpm)
-    console.log(distance)
+    kcalMean=d3.mean(calorias).toFixed(2)
 }
 main()
 
@@ -48,7 +44,7 @@ let chart = new Chart(primeiroGrafico,{
         datasets:[{
             label:"Gasto calórico",
             data: calorias,
-            backgroundColor:"#8587DC"
+            backgroundColor:"#8587DC",
         }]
     },
     options:{
@@ -78,7 +74,10 @@ let chart2 = new Chart(segundoGrafico,{
         datasets:[{
             label:"Distância Percorrida",
             data: distance,
-            backgroundColor:"#8587DC"
+            backgroundColor:"#8587DC",
+            borderColor: 'black',
+            borderWidth: 2,
+            borderRadius: Number.a,
         }]
     },
     options:{
@@ -98,8 +97,37 @@ let chart2 = new Chart(segundoGrafico,{
         }
     }
 });
-
+let heartRate = document.getElementById('heartRate').getContext('2d');
 let chart3 = new Chart(heartRate,{
+    type: "line",
+    data:{
+        labels:dia,
+
+        datasets:[{
+            label:"Heart rate",
+            data: bpm,
+            backgroundColor: 'rgba(133, 135, 220, 0.4)',
+            borderColor: '#8587DC',
+            borderWidth: 2,
+            borderRadius: 5,
+        }]
+    },
+    options: {
+        animations: {
+          tension: {
+            duration: 100,
+            easing: 'linear',
+            from: 1,
+            to: 0,
+            loop: true
+          }
+        },
+    
+      }
+
+});
+let heartRate2 = document.getElementById('heartRate2').getContext('2d');
+let chart4 = new Chart(heartRate2,{
     type: "line",
     data:{
         labels:dia,
@@ -111,20 +139,81 @@ let chart3 = new Chart(heartRate,{
             borderColor: '#8587DC'
         }]
     },
-    options:{
+    options: {
+        animations: {
+          tension: {
+            duration: 100,
+            easing: 'linear',
+            from: 1,
+            to: 0,
+            loop: true
+          }
+        },
+    
+      }
 
-        plugins:{
-            legend:{
-                labels:{
-                    font:{
-                        size:20
-                    }
-                }
-            },
-            title:{
-                display: true,
-                text:"IHUUU"
-            }
-        }
-    }
 });
+let donut1 = document.getElementById('donut1').getContext('2d');
+let donut11 = new Chart(donut1,{
+    type: 'doughnut',
+    data: {
+        labels: [
+            'Red',
+            'Blue',
+            'Yellow'
+          ],
+        datasets: [{
+          label: 'My First Dataset',
+          data: [800, 50, 100],
+          backgroundColor: [
+            'rgb(255, 99, 132)',
+            'rgb(54, 162, 235)',
+            'rgb(255, 205, 86)'
+          ],
+          hoverOffset: 4
+        }]
+    },
+    options: {
+        legend: {
+            display: false
+         },
+    }
+})
+
+let donut2 = document.getElementById('donut2').getContext('2d');
+let donut22 = new Chart(donut2,{
+    type: 'doughnut',
+    data: {
+        labels: [
+            'Red',
+            '#F0000',
+            'Yellow'
+          ],
+        datasets: [{
+          label: 'My First Dataset',
+          data: [kcalMean,1000],
+          backgroundColor: [
+            'rgb(255, 99, 132)',
+            'rgb(238, 238, 238)',
+          ],
+          borderColor: 'rgba(238, 238, 238, 1)',
+          hoverOffset: 4
+        }]
+    },
+    options: {
+        legend: {
+            display: false
+         },
+        elements: {
+            center: {
+                text: 'Red is 2/3 of the total numbers',
+                color: '#FF6384', // Default is #000000
+                fontStyle: 'Arial', // Default is Arial
+                sidePadding: 20, // Default is 20 (as a percentage)
+                minFontSize: 25, // Default is 20 (in px), set to false and text will not wrap.
+                lineHeight: 25 // Default is 25 (in px), used for when text wraps
+            }
+        },
+        rotation: (-0.5 * Math.PI) 
+    }
+})

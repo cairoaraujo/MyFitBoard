@@ -8,12 +8,17 @@
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
+    <script src='https://d3js.org/d3.v4.min.js'></script>
 </head>
 <body>
     <header id="dashHeader">
         <a href="#" class="btn-openMenu" id="opening" onClick="openMenu()">&#9776; My Profile</a>
+        <h2 id="title">MyFitBoard</h2>
     </header>
     <nav id="menu2">
         <a href="#" class="btn-closeMenu" id="closing" onclick="closeMenu()">&times; Close profile</a>
@@ -21,7 +26,7 @@
         <h4>Dados pessoais</h4>
         <div id="profile-data">
             <span>
-                OI
+                OIIHUUU
             </span>
             <span>
                 oi
@@ -32,7 +37,18 @@
         <a href="#">Contato</a>
     </nav>
     <div id="content">
-        <h2 id="title">MyFitBoard - v1.0</h2>
+        <div id="briefing">
+
+            <div class="briefChartArea">
+                Meta de calorias diárias
+                <canvas id="donut1"></canvas>
+            </div>
+
+            <div class="briefChartArea">
+                Meta de passos diários
+                <canvas id="donut2"></canvas>
+            </div>
+        </div>
         <div id="container">
             <div class="chartArea">
                 <h2>Gasto calórico</h2>
@@ -46,6 +62,10 @@
                 <h2>Media de batimentos cardíacos</h2>
                 <canvas id="heartRate"></canvas>
             </div>
+            <div class="chartArea">
+                <h2>Media de batimentos cardíacos2</h2>
+                <canvas id="heartRate2"></canvas>
+            </div>
     
         </div>
 
@@ -53,5 +73,8 @@
 
     <script src="index.js"></script>
     <script src="dashboardFunctions.js"></script>
+    <footer id="footer">  
+        Created by Cairo Araujo 
+    </footer>  
 </body>
 </html>

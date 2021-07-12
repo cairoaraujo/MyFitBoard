@@ -36,11 +36,13 @@ nav a{
     display: block;
     padding: 12px 10px 12px 32px;
 }
-canvas{
-
+#container canvas{
+    position: relative;
+    height:10vh; 
+    width:20vw;
     border: 1px solid gray;
     background: white;
-    box-shadow: 3px 3px 20px rgba(0, 0, 0, 1);
+    box-shadow: 1px 1px 20px rgb(201, 201, 201);
 }
 
 #container{
@@ -55,6 +57,13 @@ canvas{
 .chartArea{
     padding:20px;
     width:800px;
+    border-radius: 30px;
+}
+.briefChartArea{
+    justify-content: center;
+    text-align: center;
+    padding:20px;
+    width:300px;
 }
 h1{
     margin: 0;
@@ -70,6 +79,7 @@ h1{
 .btn-openMenu{
     color:white;
     font-size: 25px;
+    vertical-align: middle;
 }
 .btn-closeMenu{
     color:white;
@@ -77,15 +87,19 @@ h1{
     padding: 10px 10px 30px 30px;
 }
 #dashHeader{
+    display:flex;
+    align-items: center;
+    vertical-align: middle;
     margin:0;
-    display: flex;
-    justify-content:flex-start;
     padding: 10px 10px 30px 30px;
-    transition: margin 0.5s;
+    transition: display 0.5s;
+    
 }
 #title{
-    text-align: center;
-    font-size:30px;
+    color:white;
+    font-family: 'Otomanopee One', sans-serif;
+    text-align: center!important;
+    font-size:40px;
 }
 #content{
     transition: margin 0.7s;
@@ -99,4 +113,19 @@ h1{
 #profile-data{
     color:white;
     font-size:12px;
+}
+footer{
+    position: block;  
+    left: 10px;  
+    bottom: 0px;  
+    right: 10px;   
+    width: 100%;  
+    background-color: rgb(0, 0, 0);  
+    color: white;  
+    text-align: center;
+    transition: margin 0.5s;  
+}
+#briefing{
+    display: flex;
+    justify-content:start;
 }
