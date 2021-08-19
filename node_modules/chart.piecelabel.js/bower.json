@@ -1,0 +1,12 @@
+{
+  "name": "Chart.PieceLabel.js",
+  "version": "0.15.0",
+  "main": ["src/Chart.PieceLabel.js"],
+  "ignore": [
+    "samples",
+    "tests"
+  ],
+  "dependencies": {
+    "chart.js": ">= 2.1.5"
+  }
+}

@@ -180,7 +180,7 @@ let donut11 = new Chart(donut1,{
     }
 })
 
-let donut2 = document.getElementById('donut2').getContext('2d');
+/*let donut2 = document.getElementById('donut2').getContext('2d');
 let donut22 = new Chart(donut2,{
     type: 'doughnut',
     data: {
@@ -216,4 +216,82 @@ let donut22 = new Chart(donut2,{
         },
         rotation: (-0.5 * Math.PI) 
     }
+})*/
+
+let donut3 = document.getElementById('donut3').getContext('2d');
+let donut33 = new Chart(donut3,{
+    type: 'pie',
+    data: {
+        labels: [
+            'Carboidratos',
+            'Proteínas',
+            'Gorduras'
+          ],
+        datasets: [{
+          label: 'My First Dataset',
+          data: [680,760,855],
+          backgroundColor: [
+            'rgb(145,224,40)',
+            'rgb(242,18,39)',
+            'rgb(68,42,30)',
+          ],
+          borderColor: 'rgba(238, 238, 238, 1)',
+          hoverOffset: 4
+        }]
+    },
+    options: {
+        legend: {
+            display: true,
+            position: "right",
+            align: "end"
+         },
+        elements: {
+            center: {
+                text: 'Red is 2/3 of the total numbers',
+                color: '#FF6384', // Default is #000000
+                fontStyle: 'Arial', // Default is Arial
+                sidePadding: 20, // Default is 20 (as a percentage)
+                minFontSize: 25, // Default is 20 (in px), set to false and text will not wrap.
+                lineHeight: 25 // Default is 25 (in px), used for when text wraps
+            }
+        },
+        rotation: (-0.5 * Math.PI) 
+    }
 })
+
+
+let briefChart = document.getElementById('briefChart').getContext('2d');
+let briefChart2 = new Chart(briefChart,{
+    type: "bar",
+    data:{
+        labels:["segunda", "terça", "quarta", "quinta" , "sexta" , "sábado", "domingo"],
+
+        datasets:[{
+            type: "bar",
+            label:"Distância Percorrida",
+            data: bpm,
+            backgroundColor:"#8587DC",
+        },{
+            type:'line',
+            label: 'opaa',
+            data: calorias
+        }]
+    },
+    
+    options:{
+
+        plugins:{
+            legend:{
+                labels:{
+                    font:{
+                        size:20
+                    }
+                }
+            },
+            title:{
+                display: true,
+                text:"IHUUU"
+            }
+        }
+    }
+});

@@ -9,7 +9,7 @@ a{
     text-decoration: none;
 }
 header{
-    background-color: #200E32;
+    background-color: #FD7028;
 }
 
 nav{
@@ -19,7 +19,7 @@ nav{
     position:fixed;
     top:0;
     left:0;
-    z-index: 1;
+    z-index: 99999999999;
     overflow: hidden;
     transition: width 0.5s;
 }
@@ -36,79 +36,104 @@ nav a{
     display: block;
     padding: 12px 10px 12px 32px;
 }
-#container canvas{
+#chartsContainer canvas{
     position: relative;
-    height:10vh; 
-    width:20vw;
+    width: 100%;
     border: 1px solid gray;
-    background: white;
+    background: #EEEEEE;
     box-shadow: 1px 1px 20px rgb(201, 201, 201);
+    border: 1px solid purple;
+    border-radius:5px;
 }
 
-#container{
+#chartsContainer{
     width:100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    display: grid;
+    background-color: rgb(255, 255, 255);
+    grid-template-columns: 1fr 1fr;
     transition: margin 0.5s;
+    margin: 0 !important;
 
 }
 .chartArea{
+    margin-top:15px;
+    margin-bottom: 20px;
+    background-color: #fd6f2885;
     padding:20px;
-    width:800px;
+    width:90%;
     border-radius: 30px;
+    
+}
+canvas #briefChart{
+    width:100%;
 }
 .briefChartArea{
-    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    margin: 20px;
     text-align: center;
+    width:80%;
+}
+.briefChartFull{
+    width:90%;
     padding:20px;
-    width:300px;
+    background-color: white;
+    border: 1px solid #FD7028;
+    border-radius:20px;
+}
+.briefChartArea h4{
+    margin-top: 0;
+    margin-bottom: 40px;
+    padding: 0;
 }
 h1{
-    margin: 0;
+    font-size: 30px;
 }
-#menu{
-    color:white;
-    margin:0;
-    background-color: #200E32;
-}
-#menu2{
-    background-color:#200E32;
+
+#sideMenu{
+    background: rgb(24,24,24);
+    background: linear-gradient(0deg, rgba(24,24,24,1) 0%, rgba(55,55,55,1) 100%);
 }
 .btn-openMenu{
+    position:fixed;
     color:white;
     font-size: 25px;
-    vertical-align: middle;
 }
 .btn-closeMenu{
+    display: flex;
+    margin:0;
     color:white;
     font-size: 25px;
     padding: 10px 10px 30px 30px;
 }
 #dashHeader{
-    display:flex;
-    align-items: center;
-    vertical-align: middle;
+    position: fixed;
+    width: 100%;
+    height: 25px;
     margin:0;
-    padding: 10px 10px 30px 30px;
+    padding: 10px 20px 20px 20px;
     transition: display 0.5s;
+    z-index: 10000000;
     
 }
 #title{
     color:white;
     font-family: 'Otomanopee One', sans-serif;
     text-align: center!important;
-    font-size:40px;
+    font-size:25px;
+    justify-content: center;
+    margin-top:0px;
+    padding-bottom:20px ;
 }
-#content{
+#mainContent{
     transition: margin 0.7s;
+    padding-left: 20px;
 }
 #profile-img{
     border-radius:150px;
     display: block;
     margin-left: auto;
     margin-right: auto;
+    width:100px;
 }
 #profile-data{
     color:white;
@@ -126,6 +151,15 @@ footer{
     transition: margin 0.5s;  
 }
 #briefing{
-    display: flex;
-    justify-content:start;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    align-items: stretch;
+    margin-left: 2%;
+    justify-content: center;
+}
+
+#personalData p{
+    display:flex;
+    justify-content: space-around;
+    font-size: 12px;
 }
