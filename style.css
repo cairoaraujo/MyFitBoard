@@ -9,7 +9,7 @@ a{
     text-decoration: none;
 }
 header{
-    background-color: #FD7028;
+    background-color: #6882FE;
 }
 
 nav{
@@ -40,7 +40,7 @@ nav a{
     position: relative;
     width: 100%;
     border: 1px solid gray;
-    background: #EEEEEE;
+    background: #ffffff;
     box-shadow: 1px 1px 20px rgb(201, 201, 201);
     border: 1px solid purple;
     border-radius:5px;
@@ -52,13 +52,15 @@ nav a{
     background-color: rgb(255, 255, 255);
     grid-template-columns: 1fr 1fr;
     transition: margin 0.5s;
-    margin: 0 !important;
+    margin: 0px !important;
+    padding-left:20px;
+    padding-right:20px;
 
 }
 .chartArea{
     margin-top:15px;
     margin-bottom: 20px;
-    background-color: #fd6f2885;
+    background-color: #617efe79;
     padding:20px;
     width:90%;
     border-radius: 30px;
@@ -77,7 +79,7 @@ canvas #briefChart{
     width:90%;
     padding:20px;
     background-color: white;
-    border: 1px solid #FD7028;
+    border: 1px solid #6882FE;
     border-radius:20px;
 }
 .briefChartArea h4{
@@ -126,7 +128,7 @@ h1{
 }
 #mainContent{
     transition: margin 0.7s;
-    padding-left: 20px;
+    padding-left: 0px;
 }
 #profile-img{
     border-radius:150px;
@@ -162,4 +164,22 @@ footer{
     display:flex;
     justify-content: space-around;
     font-size: 12px;
+}
+
+#circle {
+	width: 400px;
+    margin: 6px 20px 20px;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+	vertical-align: top;
+}
+#circle strong {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    line-height: 45px;
+    font-size: 30px;
 }

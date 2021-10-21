@@ -3,6 +3,7 @@ function openMenu(){
     document.getElementById('mainContent').style.marginLeft = '250px';
     document.getElementById('dashHeader').style.height = '20px';
     document.getElementById('briefChartArea').style.width = '150%';
+    document.getElementById('title').style.width = '85%';
     //$(".chartArea").width('60%');
 }
 

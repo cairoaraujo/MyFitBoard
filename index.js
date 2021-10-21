@@ -1,49 +1,54 @@
-function fazGet(url){
+var day = [];
+var calories = [];
+var bpm = [];
+var distance = [];
+var realDailyKcal = 1874;
+var dailyKcalGoal = 2600;
+var dailyKcalPercentage = realDailyKcal / dailyKcalGoal;
+
+function main(){
+    data = doGet("http://localhost:3000/dados")
+    myData = JSON.parse(data);
+
+    myData.map(function(myData,i){
+        calories[i] = myData.kcal
+        return calories[i]
+    })
+
+    myData.map(function(myData,i){
+        day[i] = myData.date
+        return day[i]
+    })
+
+    myData.map(function(myData,i){
+        bpm[i] = myData.heartRate
+        return bpm[i]
+    })
+    myData.map(function(myData,i){
+        distance[i] = myData.distance
+        return distance[i]
+    })
+
+    kcalMean=d3.mean(calories).toFixed(2)
+}
+main();
+
+function doGet(url){
     let request = new XMLHttpRequest()
     request.open("GET", url, false)
     request.send()
     return request.responseText
 }
-var dia = [];
-var calorias = [];
-var bpm = [];
-var distance = [];
-function main(){
-    data = fazGet("http://localhost:3333/dados")
-    meusDados = JSON.parse(data);
-    console.log(meusDados)
 
-    meusDados.map(function(meusDados,i){
-        calorias[i] = meusDados.kcal
-        return calorias[i]
-    })
-
-    meusDados.map(function(meusDados,i){
-        dia[i] = meusDados.date
-        return dia[i]
-    })
-
-    meusDados.map(function(meusDados,i){
-        bpm[i] = meusDados.heartRate
-        return bpm[i]
-    })
-    meusDados.map(function(meusDados,i){
-        distance[i] = meusDados.distance
-        return distance[i]
-    })
-    kcalMean=d3.mean(calorias).toFixed(2)
-}
-main()
-
-let primeiroGrafico = document.getElementById('primeiroGrafico').getContext('2d');
-let chart = new Chart(primeiroGrafico,{
+let caloriesChart = document.getElementById('caloriesChart').getContext('2d');
+let chart = new Chart(caloriesChart,{
     type: "line",
     data:{
-        labels:dia,
+        labels:day,
 
         datasets:[{
             label:"Gasto calórico",
-            data: calorias,
+            data: calories,
             backgroundColor:"#8587DC",
         }]
     },
@@ -65,18 +70,18 @@ let chart = new Chart(primeiroGrafico,{
     }
 });
 
-let segundoGrafico = document.getElementById('segundoGrafico').getContext('2d');
-let chart2 = new Chart(segundoGrafico,{
+let distanceChart = document.getElementById('distanceChart').getContext('2d');
+let chart2 = new Chart(distanceChart,{
     type: "bar",
     data:{
-        labels:dia,
+        labels:day,
 
         datasets:[{
             label:"Distância Percorrida",
             data: distance,
             backgroundColor:"#8587DC",
-            borderColor: 'black',
-            borderWidth: 2,
+            borderColor: '#8587DC',
+            borderWidth: 1,
             borderRadius: Number.a,
         }]
     },
@@ -97,14 +102,14 @@ let chart2 = new Chart(segundoGrafico,{
         }
     }
 });
-let heartRate = document.getElementById('heartRate').getContext('2d');
-let chart3 = new Chart(heartRate,{
+let heartChart = document.getElementById('heartChart').getContext('2d');
+let chart3 = new Chart(heartChart,{
     type: "line",
     data:{
-        labels:dia,
+        labels:day,
 
         datasets:[{
-            label:"Heart rate",
+            label:"BPM",
             data: bpm,
             backgroundColor: 'rgba(133, 135, 220, 0.4)',
             borderColor: '#8587DC',
@@ -130,7 +135,7 @@ let heartRate2 = document.getElementById('heartRate2').getContext('2d');
 let chart4 = new Chart(heartRate2,{
     type: "line",
     data:{
-        labels:dia,
+        labels:day,
 
         datasets:[{
             label:"Heart rate",
@@ -153,22 +158,20 @@ let chart4 = new Chart(heartRate2,{
       }
 
 });
-let donut1 = document.getElementById('donut1').getContext('2d');
+/*let donut1 = document.getElementById('donut1').getContext('2d');
 let donut11 = new Chart(donut1,{
     type: 'doughnut',
     data: {
         labels: [
             'Red',
             'Blue',
-            'Yellow'
           ],
         datasets: [{
           label: 'My First Dataset',
-          data: [800, 50, 100],
+          data: [800, 1000],
           backgroundColor: [
             'rgb(255, 99, 132)',
-            'rgb(54, 162, 235)',
-            'rgb(255, 205, 86)'
+            'rgb(229, 229, 229)'
           ],
           hoverOffset: 4
         }]
@@ -178,7 +181,7 @@ let donut11 = new Chart(donut1,{
             display: false
          },
     }
-})
+})*/
 
 /*let donut2 = document.getElementById('donut2').getContext('2d');
 let donut22 = new Chart(donut2,{
@@ -218,7 +221,7 @@ let donut22 = new Chart(donut2,{
     }
 })*/
 
-let donut3 = document.getElementById('donut3').getContext('2d');
+/*let donut3 = document.getElementById('donut3').getContext('2d');
 let donut33 = new Chart(donut3,{
     type: 'pie',
     data: {
@@ -257,24 +260,25 @@ let donut33 = new Chart(donut3,{
         },
         rotation: (-0.5 * Math.PI) 
     }
-})
+})*/
 
 
 let briefChart = document.getElementById('briefChart').getContext('2d');
 let briefChart2 = new Chart(briefChart,{
     type: "bar",
     data:{
-        labels:["segunda", "terça", "quarta", "quinta" , "sexta" , "sábado", "domingo"],
+        labels:["Seg", "Ter", "Qua", "Qui" , "Sex" , "Sáb", "Dom"],
 
         datasets:[{
             type: "bar",
             label:"Distância Percorrida",
-            data: bpm,
+            data: distance,
             backgroundColor:"#8587DC",
         },{
             type:'line',
-            label: 'opaa',
-            data: calorias
+            label: 'calories',
+            data: calories,
+            backgroundColor:"#FA70A1",
         }]
     },
     
@@ -295,3 +299,26 @@ let briefChart2 = new Chart(briefChart,{
         }
     }
 });
+
+Array.prototype.findMaxValue = function() {
+    return Math.max.apply(null, this);
+  };
+  
+  Array.prototype.findMinValue = function() {
+    return Math.min.apply(null, this);
+  };
+//realDailyKcal = 1800;
+//dailyKcalGoal = 2600;
+$('#circle').circleProgress({
+    value: dailyKcalPercentage,
+    startAngle: -1.55,
+    size: 250,
+    fill: {
+        gradient: ['#0681c4','#4ac5f8']
+    }
+  }).on('circle-animation-progress', function(event, progress, stepValue) {
+    console.log(stepValue);
+    $(this).find('strong').text(realDailyKcal.toFixed(0).substr(0)+"/" + dailyKcalGoal + '\n' +'kcal');
+  });
+
+  alert(distance.findMaxValue())

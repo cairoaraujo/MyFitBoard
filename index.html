@@ -16,6 +16,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
     <script src='https://d3js.org/d3.v4.min.js'></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.2/circle-progress.min.js" integrity="sha512-6kvhZ/39gRVLmoM/6JxbbJVTYzL/gnbDVsHACLx/31IREU4l3sI7yeO0d4gw8xU5Mpmm/17LMaDHOCf+TvuC2Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/progressbar.js/1.1.0/progressbar.min.js" integrity="sha512-EZhmSl/hiKyEHklogkakFnSYa5mWsLmTC4ZfvVzhqYNLPbXKAXsjUYRf2O9OlzQN33H0xBVfGSEIUeqt9astHQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body>
     <header id="dashHeader">
@@ -57,32 +59,41 @@
             <div class="briefChartFull">
                 <canvas id="briefChart"></canvas>
             </div>
-            <div class="briefChartArea">
+            <!--- <div class="briefChartArea">
                 <h4>Meta de calorias diárias</h4>
                 <canvas id="donut1"></canvas>
+            </div> --->
+
+
+            <div id="circle">
+                <strong></strong>
             </div>
 
-            <div class="briefChartArea">
+
+
+
+            <!---<div class="briefChartArea">
                 <h4>Macros</h4>
                 <canvas id="donut3"></canvas>
-            </div>
+            </div>--->
 
         </div>
+        <h2>Período total</h2>
         <div id="chartsContainer">
             <div class="chartArea" id="opa">
                 <h3>Gasto calórico</h3>
-                <canvas id="primeiroGrafico"></canvas>
+                <canvas id="caloriesChart"></canvas>
             </div>
             <div class="chartArea" id="opa">
                 <h3>Distância percorrida</h3>
-                <canvas id="segundoGrafico"></canvas>
+                <canvas id="distanceChart"></canvas>
             </div>
             <div class="chartArea" id="opa">
-                <h3>Media de batimentos cardíacos</h3>
-                <canvas id="heartRate"></canvas>
+                <h3>Média de batimentos cardíacos</h3>
+                <canvas id="heartChart"></canvas>
             </div>
             <div class="chartArea" id="opa">
-                <h3>Media de batimentos cardíacos2</h3>
+                <h3>Média de batimentos cardíacos2</h3>
                 <canvas id="heartRate2"></canvas>
             </div>
     
@@ -94,6 +105,8 @@
     <script src="dashboardFunctions.js"></script>
     <footer id="footer">  
         Created by Cairo Araujo 
-    </footer>  
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
 </body>
 </html>
