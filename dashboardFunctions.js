@@ -20,11 +20,23 @@ function closeMenu(){
 
 function changeTheme(){
     if (document.getElementById("theme").checked == true){//DARK THEME
-        document.getElementById("mainContent").style.backgroundColor = "#080808"
-        document.getElementById("opa").style.backgroundColor = "#080808"
+        document.getElementById("mainContent").style.backgroundColor = "#414141"
+        document.getElementById("mainContent").style.color = "#ffffff"
+
+        document.getElementById("chartsContainer").style.backgroundColor = "#2e2e2e"
+
+        document.getElementById("welcomeMsg").style.backgroundColor = "#2e2e2e"
+        document.getElementById("welcomeMsg").style.color = "#ffffff"
+        document.getElementById("welcomeMsg").style.color = "#ffffff"
+        
     }
     else{//LIGHT THEME
-        document.getElementById("mainContent").style.backgroundColor = "white"
-        document.getElementById("opa").style.backgroundColor = "white"
+        document.getElementById("mainContent").style.backgroundColor = "#F5F5F5"
+        document.getElementById("mainContent").style.color = "#000000"
+
+        document.getElementById("chartsContainer").style.backgroundColor = "#FFFFFF"
+
+        document.getElementById("welcomeMsg").style.backgroundColor = "#FFFFFF"
+        document.getElementById("welcomeMsg").style.color = "#FA70A1"
     }
 }

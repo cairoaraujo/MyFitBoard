@@ -169,8 +169,15 @@ footer{
 
 #personalData p{
     display:flex;
-    justify-content:space-evenly;
+    justify-content:center;
     font-size: 14px;
+    font-weight: 800;
+    color: #FFC200;
+}
+
+#personalData p spam{
+    font-weight: 500!important;
+    color: #ffffff;
 }
 
 #circle {
@@ -222,8 +229,8 @@ footer{
 #welcomeMsg{
     display: flex;
     background-color: white;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 15px;
+    padding-bottom: 20px;
     border-radius: 10px;
     margin-left:20px;
     margin-right:20px;

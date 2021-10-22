@@ -253,14 +253,14 @@ let donut33 = new Chart(donut3,{
             'Gorduras'
           ],
         datasets: [{
-          label: 'My First Dataset',
           data: [680,760,855],
           backgroundColor: [
-            'rgb(145,224,40)',
-            'rgb(242,18,39)',
-            'rgb(68,42,30)',
+            '#48C3F7',
+            '#FA70A1',
+            '#6882FE',
           ],
-          borderColor: 'white',
+          fontColor: "#ffffff",
+          borderColor: '#ffffff',
           hoverOffset: 4
         }]
     },
@@ -269,16 +269,21 @@ let donut33 = new Chart(donut3,{
             display: true,
             position: "right",
             align: "end",
-            color: 'rgb(255, 99, 132)'
+            color: 'rgb(255, 99, 132)',
+            labels:{
+                font:{
+                    size:20
+                }
+            }
          },
         elements: {
             center: {
                 text: 'Red is 2/3 of the total numbers',
                 color: 'rgb(255, 99, 132)', // Default is #000000
-                fontStyle: 'Arial', // Default is Arial
-                sidePadding: 20, // Default is 20 (as a percentage)
+                fontStyle: 'Noto Sans', // Default is Arial
+                sidePadding: 10, // Default is 20 (as a percentage)
                 minFontSize: 55, // Default is 20 (in px), set to false and text will not wrap.
-                lineHeight: 25 // Default is 25 (in px), used for when text wraps
+                lineHeight: 15 // Default is 25 (in px), used for when text wraps
             }
         },
         rotation: (-0.5 * Math.PI) 

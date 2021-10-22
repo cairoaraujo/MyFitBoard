@@ -36,9 +36,10 @@
         <h4></h4>
         <div id="profile-data">
             <span id="personalData">
-                <p>Altura: 1,89 m</p>
-                <p>Peso: 94,3 kg</p>
-                <p>TMB: 2340 kcal</p>
+                <h4>Meus Dados</h4>
+                <p>Altura: <spam id="userHeight"></spam></p>
+                <p>Peso: <spam id="userWeight"></spam></p>
+                <p>TMB: <spam id="userTmb"></spam></p>
                 <br>
                 <div class="briefChartArea">
                     <h4>Macros</h4>
@@ -59,7 +60,7 @@
     <div id="mainContent">
         <br><br><br>
         <div id="welcomeMsg">
-            <h1 class="column">Bem vindo, Cairo!</h1>
+            <h1 class="column">Bem vindo, <spam id="username"></spam>!</h1>
             <div id="records" class="column">
                 <h4>Sua maior distância percorrida:<spam id="distanceRecord"></spam></h4>
                 <h4>Seu maior gasto calórico:<spam id="kcalRecord"></spam></h4>
@@ -112,15 +113,10 @@
             </div>
     
         </div>
-        <h2>Recordes históricos</h2>
-        <div id="records">
-            <h4>Sua maior distância percorrida:<spam id="distanceRecord"></spam></h4>
-            <h4>Seu maior gasto calórico:<spam id="kcalRecord"></spam></h4>
-            <h4>Seu maior BPM:<spam id="bpmRecord"></spam></h4>
-        </div>
     </div>
 
     <script src="index.js"></script>
+    <script src="userData.js"></script>
     <script src="dashboardFunctions.js"></script>
     <footer id="footer">  
         Created by Cairo Araujo 
