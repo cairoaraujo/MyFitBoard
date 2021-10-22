@@ -1,0 +1,1 @@
+document.getElementById("bpmRecord").innerHTML = "  " + val + " BPM ";

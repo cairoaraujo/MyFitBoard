@@ -1,10 +1,14 @@
 var day = [];
 var calories = [];
+var weight = [];
 var bpm = [];
 var distance = [];
 var realDailyKcal = 1874;
 var dailyKcalGoal = 2600;
 var dailyKcalPercentage = realDailyKcal / dailyKcalGoal;
+var dayWithWeight = [];
+var count = -1;
+var count2 = -1;
 
 function main(){
     data = doGet("http://localhost:3000/dados")
@@ -21,6 +25,14 @@ function main(){
     })
 
     myData.map(function(myData,i){
+        if (myData.weight != null || myData.weight != undefined){
+            count ++;
+            weight[count] = myData.weight;
+            return weight[count]
+        }
+    })
+
+    myData.map(function(myData,i){
         bpm[i] = myData.heartRate
         return bpm[i]
     })
@@ -29,6 +41,16 @@ function main(){
         return distance[i]
     })
 
+    myData.map(function(myData, i){
+        if (myData.weight != null || myData.weight != undefined){
+            count2++;
+            dayWithWeight[count2] = myData.date;
+            console.log(count2)
+            return dayWithWeight[count2];
+        }
+    })
+    console.log(dayWithWeight)
+    console.log(weight)
     kcalMean=d3.mean(calories).toFixed(2)
 }
 main();
@@ -49,7 +71,7 @@ let chart = new Chart(caloriesChart,{
         datasets:[{
             label:"Gasto calórico",
             data: calories,
-            backgroundColor:"#8587DC",
+            backgroundColor:"#7ED321",
         }]
     },
     options:{
@@ -78,10 +100,11 @@ let chart2 = new Chart(distanceChart,{
         datasets:[{
             label:"Distância Percorrida",
             data: distance,
-            backgroundColor:"#8587DC",
-            borderColor: '#8587DC',
-            borderWidth: 1,
+            backgroundColor:"#FFB54F",
+            borderColor: '#FFB54F',
+            borderWidth: 5,
             borderRadius: Number.a,
+            barThickness: 100
         }]
     },
     options:{
@@ -102,23 +125,23 @@ let chart2 = new Chart(distanceChart,{
 });
 let heartChart = document.getElementById('heartChart').getContext('2d');
 let chart3 = new Chart(heartChart,{
-    type: "line",
+    type: "bar",
     data:{
         labels:day,
 
         datasets:[{
             label:"BPM",
             data: bpm,
-            backgroundColor: 'rgba(133, 135, 220, 0.4)',
-            borderColor: '#8587DC',
-            borderWidth: 2,
+            backgroundColor: '#FA70A1',
+            borderColor: 'red',
+            borderWidth: 1,
             borderRadius: 5,
         }]
     },
     options: {
         animations: {
           tension: {
-            duration: 100,
+            duration: 5000,
             easing: 'linear',
             from: 1,
             to: 0,
@@ -129,23 +152,24 @@ let chart3 = new Chart(heartChart,{
       }
 
 });
-let heartRate2 = document.getElementById('heartRate2').getContext('2d');
-let chart4 = new Chart(heartRate2,{
+let weightChart = document.getElementById('weightChart').getContext('2d');
+let chart4 = new Chart(weightChart,{
     type: "line",
     data:{
-        labels:day,
+        labels:dayWithWeight,
 
         datasets:[{
-            label:"Heart rate",
-            data: bpm,
-            backgroundColor: 'rgba(133, 135, 220, 0.4)',
-            borderColor: '#8587DC'
+            label:"Peso",
+            data: weight,
+            backgroundColor: '#6882FE',
+            borderColor: 'rgb(255,0,0)',
+            fill: true,
         }]
     },
     options: {
         animations: {
           tension: {
-            duration: 100,
+            duration: 1000,
             easing: 'linear',
             from: 1,
             to: 0,
@@ -236,7 +260,7 @@ let donut33 = new Chart(donut3,{
             'rgb(242,18,39)',
             'rgb(68,42,30)',
           ],
-          borderColor: 'rgba(238, 238, 238, 1)',
+          borderColor: 'white',
           hoverOffset: 4
         }]
     },
@@ -245,15 +269,15 @@ let donut33 = new Chart(donut3,{
             display: true,
             position: "right",
             align: "end",
-            color: "blue"
+            color: 'rgb(255, 99, 132)'
          },
         elements: {
             center: {
                 text: 'Red is 2/3 of the total numbers',
-                color: '#AGSAGSAY', // Default is #000000
+                color: 'rgb(255, 99, 132)', // Default is #000000
                 fontStyle: 'Arial', // Default is Arial
                 sidePadding: 20, // Default is 20 (as a percentage)
-                minFontSize: 25, // Default is 20 (in px), set to false and text will not wrap.
+                minFontSize: 55, // Default is 20 (in px), set to false and text will not wrap.
                 lineHeight: 25 // Default is 25 (in px), used for when text wraps
             }
         },
@@ -335,4 +359,3 @@ $('#circle').circleProgress({
       document.getElementById("bpmRecord").innerHTML = "  " + val + " BPM ";
   }
   maxBpm();
-  console.log(distance)

@@ -143,6 +143,10 @@ h1{
 #profile-data{
     color:white;
     font-size:12px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: rgb(65, 65, 65);
+    border-radius: 10px;
 }
 footer{
     position: block;  
@@ -189,10 +193,8 @@ footer{
 }
 
 #records{
-    padding-top:50px;
-    padding-bottom: 50px;
-    background-color: white;
-    text-align: center;
+    color: gray;
+    line-height: 1;
 }
 #records spam{
     color:#FA70A1;
@@ -211,4 +213,28 @@ footer{
     display: flex;
     justify-content: center;
     text-align: center;
+}
+#slideMenu #profile-data canvas{
+    font-size:50px!important;
+    color:white
+}
+
+#welcomeMsg{
+    display: flex;
+    background-color: white;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-radius: 10px;
+    margin-left:20px;
+    margin-right:20px;
+    color: #FA70A1;
+    -webkit-box-shadow: 0px 1px 13px -7px #000000, 0px 0px 3px 0px rgba(0,0,0,0.2); 
+    box-shadow: 0px 1px 13px -7px #000000, 0px 0px 3px 0px rgba(0,0,0,0.2);
+}
+#welcomeMsg h1{
+    margin-top:50px
+}
+.column{
+    flex: 50%;
+
 }

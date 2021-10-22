@@ -5,7 +5,8 @@
     "date": "12/01/2021",
     "kcal": 627,
     "heartRate": 87.838326,
-    "distance": 3.2125747
+    "distance": 3.2125747,
+    "weight": 94.3
   },
   {
     "index": 1,
@@ -75,7 +76,8 @@
     "date": "22/01/2021",
     "kcal": 158,
     "heartRate": 70.32912,
-    "distance": 1.78702
+    "distance": 1.78702,
+    "weight": 93.7
   },
   {
     "index": 11,
@@ -145,7 +147,8 @@
     "date": "01/02/2021",
     "kcal": 904,
     "heartRate": 72.58188,
-    "distance": 4.082532
+    "distance": 4.082532,
+    "weight": 93.2
   },
   {
     "index": 21,
@@ -215,7 +218,8 @@
     "date": "11/02/2021",
     "kcal": 1090,
     "heartRate": 76.438,
-    "distance": 4.4573913
+    "distance": 4.4573913,
+    "weight": 92.7
   },
   {
     "index": 31,
@@ -285,7 +289,8 @@
     "date": "21/02/2021",
     "kcal": 179,
     "heartRate": 77.91801,
-    "distance": 1.2853452
+    "distance": 1.2853452,
+    "weight": 92.5
   },
   {
     "index": 41,
@@ -355,7 +360,8 @@
     "date": "05/03/2021",
     "kcal": 54,
     "heartRate": 69.689186,
-    "distance": 1.01405
+    "distance": 1.01405,
+    "weight": 93.2
   },
   {
     "index": 51,
@@ -425,7 +431,8 @@
     "date": "19/03/2021",
     "kcal": 12,
     "heartRate": 76.61667,
-    "distance": 1.78153
+    "distance": 1.78153,
+    "weight": 92.3
   },
   {
     "index": 61,
@@ -495,7 +502,8 @@
     "date": "10/05/2021",
     "kcal": 1,
     "heartRate": 76.111115,
-    "distance": 0.53019
+    "distance": 0.53019,
+    "weight": 92.1
   },
   {
     "index": 71,
@@ -565,7 +573,8 @@
     "date": "27/05/2021",
     "kcal": 376,
     "heartRate": 95.87668,
-    "distance": 1.374447
+    "distance": 1.374447,
+    "weight": 91.8
   },
   {
     "index": 81,
@@ -635,7 +644,8 @@
     "date": "13/06/2021",
     "kcal": 49,
     "heartRate": 95.675674,
-    "distance": 1.2254
+    "distance": 1.2254,
+    "weight": 92.2
   },
   {
     "index": 91,
@@ -705,7 +715,8 @@
     "date": "08/07/2021",
     "kcal": 501,
     "heartRate": 75.08455,
-    "distance": 2.30619
+    "distance": 2.30619,
+    "weight": 92.3
   },
   {
     "index": 101,
