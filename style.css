@@ -4,7 +4,9 @@ body{
     background-color: rgb(245, 245, 245);
     font-family: 'Noto Sans', sans-serif;
 }
-
+h2{
+    padding-left: 30px;
+}
 a{
     text-decoration: none;
 }
@@ -70,7 +72,7 @@ canvas #briefChart{
     width:100%;
 }
 .briefChartArea{
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0);
     margin: 20px;
     text-align: center;
     width:80%;
@@ -89,6 +91,7 @@ canvas #briefChart{
 }
 h1{
     font-size: 30px;
+    padding-left: 15px;
 }
 
 #sideMenu{
@@ -154,7 +157,7 @@ footer{
 }
 #briefing{
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-columns: 2fr 2fr;
     align-items: stretch;
     margin-left: 2%;
     justify-content: center;
@@ -162,8 +165,8 @@ footer{
 
 #personalData p{
     display:flex;
-    justify-content: space-around;
-    font-size: 12px;
+    justify-content:space-evenly;
+    font-size: 14px;
 }
 
 #circle {
@@ -180,6 +183,32 @@ footer{
     left: 0;
     width: 100%;
     text-align: center;
-    line-height: 45px;
-    font-size: 30px;
+    line-height: 100px;
+    font-size: 25px;
+    color: #FA70A1;
+}
+
+#records{
+    padding-top:50px;
+    padding-bottom: 50px;
+    background-color: white;
+    text-align: center;
+}
+#records spam{
+    color:#FA70A1;
+}
+
+#circleChart{
+    text-align: center;
+}
+#donut3 *{
+    color: white;
+}
+#darkModeTitle{
+    justify-content: center;
+}
+.slider round{
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }

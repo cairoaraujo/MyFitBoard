@@ -64,7 +64,6 @@ let chart = new Chart(caloriesChart,{
             },
             title:{
                 display: true,
-                text:"IHUUU"
             }
         }
     }
@@ -97,7 +96,6 @@ let chart2 = new Chart(distanceChart,{
             },
             title:{
                 display: true,
-                text:"IHUUU"
             }
         }
     }
@@ -221,7 +219,7 @@ let donut22 = new Chart(donut2,{
     }
 })*/
 
-/*let donut3 = document.getElementById('donut3').getContext('2d');
+let donut3 = document.getElementById('donut3').getContext('2d');
 let donut33 = new Chart(donut3,{
     type: 'pie',
     data: {
@@ -246,12 +244,13 @@ let donut33 = new Chart(donut3,{
         legend: {
             display: true,
             position: "right",
-            align: "end"
+            align: "end",
+            color: "blue"
          },
         elements: {
             center: {
                 text: 'Red is 2/3 of the total numbers',
-                color: '#FF6384', // Default is #000000
+                color: '#AGSAGSAY', // Default is #000000
                 fontStyle: 'Arial', // Default is Arial
                 sidePadding: 20, // Default is 20 (as a percentage)
                 minFontSize: 25, // Default is 20 (in px), set to false and text will not wrap.
@@ -260,7 +259,7 @@ let donut33 = new Chart(donut3,{
         },
         rotation: (-0.5 * Math.PI) 
     }
-})*/
+})
 
 
 let briefChart = document.getElementById('briefChart').getContext('2d');
@@ -294,7 +293,6 @@ let briefChart2 = new Chart(briefChart,{
             },
             title:{
                 display: true,
-                text:"IHUUU"
             }
         }
     }
@@ -317,8 +315,24 @@ $('#circle').circleProgress({
         gradient: ['#0681c4','#4ac5f8']
     }
   }).on('circle-animation-progress', function(event, progress, stepValue) {
-    console.log(stepValue);
-    $(this).find('strong').text(realDailyKcal.toFixed(0).substr(0)+"/" + dailyKcalGoal + '\n' +'kcal');
+    $(this).find('strong').text(realDailyKcal.toFixed(0).substr(0)+" / " + dailyKcalGoal + '\n' +'kcal');
   });
 
-  alert(distance.findMaxValue())
+  function maxDistance(){
+      var val = distance.findMaxValue().toFixed(2);
+      document.getElementById("distanceRecord").innerHTML = "  " + val + " km";
+  };
+  maxDistance();
+
+  function maxKcal(){
+      var val = calories.findMaxValue().toFixed(0);
+      document.getElementById("kcalRecord").innerHTML = "  " + val + " kcal";
+  }
+  maxKcal();
+
+  function maxBpm(){
+      var val = bpm.findMaxValue().toFixed(0);
+      document.getElementById("bpmRecord").innerHTML = "  " + val + " BPM ";
+  }
+  maxBpm();
+  console.log(distance)
