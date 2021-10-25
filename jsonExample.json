@@ -1,0 +1,736 @@
+{
+  "dados":[
+  {
+    "index": 0,
+    "date": "12/01/2021",
+    "kcal": 627,
+    "heartRate": 87.838326,
+    "distance": 3.2125747,
+    "weight": 94.3
+  },
+  {
+    "index": 1,
+    "date": "13/01/2021",
+    "kcal": 849,
+    "heartRate": 86.64165,
+    "distance": 4.1446323
+  },
+  {
+    "index": 2,
+    "date": "14/01/2021",
+    "kcal": 699,
+    "heartRate": 78.389656,
+    "distance": 4.092937
+  },
+  {
+    "index": 3,
+    "date": "15/01/2021",
+    "kcal": 895,
+    "heartRate": 78.038376,
+    "distance": 3.3303
+  },
+  {
+    "index": 4,
+    "date": "16/01/2021",
+    "kcal": 245,
+    "heartRate": 78.6,
+    "distance": 2.25444
+  },
+  {
+    "index": 5,
+    "date": "17/01/2021",
+    "kcal": 258,
+    "heartRate": 75.85381,
+    "distance": 0.95394
+  },
+  {
+    "index": 6,
+    "date": "18/01/2021",
+    "kcal": 766,
+    "heartRate": 67.974525,
+    "distance": 2.48071
+  },
+  {
+    "index": 7,
+    "date": "19/01/2021",
+    "kcal": 94,
+    "heartRate": 69.445435,
+    "distance": 0.4673
+  },
+  {
+    "index": 8,
+    "date": "20/01/2021",
+    "kcal": 888,
+    "heartRate": 76.21014,
+    "distance": 4.20552
+  },
+  {
+    "index": 9,
+    "date": "21/01/2021",
+    "kcal": 194,
+    "heartRate": 75.21105,
+    "distance": 1.88808
+  },
+  {
+    "index": 10,
+    "date": "22/01/2021",
+    "kcal": 158,
+    "heartRate": 70.32912,
+    "distance": 1.78702,
+    "weight": 93.7
+  },
+  {
+    "index": 11,
+    "date": "23/01/2021",
+    "kcal": 100,
+    "heartRate": 68.50218,
+    "distance": 0.49218
+  },
+  {
+    "index": 12,
+    "date": "24/01/2021",
+    "kcal": 140,
+    "heartRate": 73.70085,
+    "distance": 1.60857
+  },
+  {
+    "index": 13,
+    "date": "25/01/2021",
+    "kcal": 1009,
+    "heartRate": 78.328156,
+    "distance": 3.0518
+  },
+  {
+    "index": 14,
+    "date": "26/01/2021",
+    "kcal": 857,
+    "heartRate": 81.196556,
+    "distance": 3.5784745
+  },
+  {
+    "index": 15,
+    "date": "27/01/2021",
+    "kcal": 715,
+    "heartRate": 76.02317,
+    "distance": 2.8293562
+  },
+  {
+    "index": 16,
+    "date": "28/01/2021",
+    "kcal": 701,
+    "heartRate": 78.33756,
+    "distance": 4.3556037
+  },
+  {
+    "index": 17,
+    "date": "29/01/2021",
+    "kcal": 847,
+    "heartRate": 77.884415,
+    "distance": 3.1329
+  },
+  {
+    "index": 18,
+    "date": "30/01/2021",
+    "kcal": 252,
+    "heartRate": 74.85969,
+    "distance": 1.14933
+  },
+  {
+    "index": 19,
+    "date": "31/01/2021",
+    "kcal": 88,
+    "heartRate": 71.42001,
+    "distance": 0.92932
+  },
+  {
+    "index": 20,
+    "date": "01/02/2021",
+    "kcal": 904,
+    "heartRate": 72.58188,
+    "distance": 4.082532,
+    "weight": 93.2
+  },
+  {
+    "index": 21,
+    "date": "02/02/2021",
+    "kcal": 1094,
+    "heartRate": 75.473335,
+    "distance": 3.7377021
+  },
+  {
+    "index": 22,
+    "date": "03/02/2021",
+    "kcal": 916,
+    "heartRate": 75.64,
+    "distance": 3.46541
+  },
+  {
+    "index": 23,
+    "date": "04/02/2021",
+    "kcal": 872,
+    "heartRate": 73.51291,
+    "distance": 3.3824177
+  },
+  {
+    "index": 24,
+    "date": "05/02/2021",
+    "kcal": 908,
+    "heartRate": 72.632515,
+    "distance": 3.8995507
+  },
+  {
+    "index": 25,
+    "date": "06/02/2021",
+    "kcal": 120,
+    "heartRate": 66.060646,
+    "distance": 1.28126
+  },
+  {
+    "index": 26,
+    "date": "07/02/2021",
+    "kcal": 187,
+    "heartRate": 69.92111,
+    "distance": 0.3593702
+  },
+  {
+    "index": 27,
+    "date": "08/02/2021",
+    "kcal": 1018,
+    "heartRate": 73.39283,
+    "distance": 2.5990324
+  },
+  {
+    "index": 28,
+    "date": "09/02/2021",
+    "kcal": 1050,
+    "heartRate": 83.53341,
+    "distance": 2.95169
+  },
+  {
+    "index": 29,
+    "date": "10/02/2021",
+    "kcal": 1109,
+    "heartRate": 74.323425,
+    "distance": 3.4947743
+  },
+  {
+    "index": 30,
+    "date": "11/02/2021",
+    "kcal": 1090,
+    "heartRate": 76.438,
+    "distance": 4.4573913,
+    "weight": 92.7
+  },
+  {
+    "index": 31,
+    "date": "12/02/2021",
+    "kcal": 1095,
+    "heartRate": 76.70451,
+    "distance": 3.25088
+  },
+  {
+    "index": 32,
+    "date": "13/02/2021",
+    "kcal": 270,
+    "heartRate": 73.49752,
+    "distance": 1.5050356
+  },
+  {
+    "index": 33,
+    "date": "14/02/2021",
+    "kcal": 556,
+    "heartRate": 73.759575,
+    "distance": 1.68936
+  },
+  {
+    "index": 34,
+    "date": "15/02/2021",
+    "kcal": 242,
+    "heartRate": 72.18104,
+    "distance": 0.8996416
+  },
+  {
+    "index": 35,
+    "date": "16/02/2021",
+    "kcal": 98,
+    "heartRate": 65.53478,
+    "distance": 0.51829
+  },
+  {
+    "index": 36,
+    "date": "17/02/2021",
+    "kcal": 1017,
+    "heartRate": 91.75,
+    "distance": 3.139449
+  },
+  {
+    "index": 37,
+    "date": "18/02/2021",
+    "kcal": 995,
+    "heartRate": 75.34375,
+    "distance": 3.2321432
+  },
+  {
+    "index": 38,
+    "date": "19/02/2021",
+    "kcal": 192,
+    "heartRate": 74.32664,
+    "distance": 0.8982082
+  },
+  {
+    "index": 39,
+    "date": "20/02/2021",
+    "kcal": 718,
+    "heartRate": 77.971794,
+    "distance": 8.261657
+  },
+  {
+    "index": 40,
+    "date": "21/02/2021",
+    "kcal": 179,
+    "heartRate": 77.91801,
+    "distance": 1.2853452,
+    "weight": 92.5
+  },
+  {
+    "index": 41,
+    "date": "22/02/2021",
+    "kcal": 871,
+    "heartRate": 73.31151,
+    "distance": 3.15297
+  },
+  {
+    "index": 42,
+    "date": "23/02/2021",
+    "kcal": 886,
+    "heartRate": 91.13753,
+    "distance": 3.3515837
+  },
+  {
+    "index": 43,
+    "date": "24/02/2021",
+    "kcal": 3,
+    "heartRate": 78.61157,
+    "distance": 0.1116
+  },
+  {
+    "index": 44,
+    "date": "27/02/2021",
+    "kcal": 38,
+    "heartRate": 79.04205,
+    "distance": 0.98023
+  },
+  {
+    "index": 45,
+    "date": "28/02/2021",
+    "kcal": 84,
+    "heartRate": 71.50822,
+    "distance": 0.72925
+  },
+  {
+    "index": 46,
+    "date": "01/03/2021",
+    "kcal": 79,
+    "heartRate": 74.955124,
+    "distance": 0.38005823
+  },
+  {
+    "index": 47,
+    "date": "02/03/2021",
+    "kcal": 49,
+    "heartRate": 70.20427,
+    "distance": 0.41161
+  },
+  {
+    "index": 48,
+    "date": "03/03/2021",
+    "kcal": 322,
+    "heartRate": 72.441154,
+    "distance": 4.1300735
+  },
+  {
+    "index": 49,
+    "date": "04/03/2021",
+    "kcal": 80,
+    "heartRate": 69.94915,
+    "distance": 0.16791
+  },
+  {
+    "index": 50,
+    "date": "05/03/2021",
+    "kcal": 54,
+    "heartRate": 69.689186,
+    "distance": 1.01405,
+    "weight": 93.2
+  },
+  {
+    "index": 51,
+    "date": "06/03/2021",
+    "kcal": 1,
+    "heartRate": 89.5,
+    "distance": 0.5721801
+  },
+  {
+    "index": 52,
+    "date": "11/03/2021",
+    "kcal": 41,
+    "heartRate": 74.961945,
+    "distance": 0.48536
+  },
+  {
+    "index": 53,
+    "date": "12/03/2021",
+    "kcal": 112,
+    "heartRate": 69.536095,
+    "distance": 1.36114
+  },
+  {
+    "index": 54,
+    "date": "13/03/2021",
+    "kcal": 104,
+    "heartRate": 70.967094,
+    "distance": 0.87977
+  },
+  {
+    "index": 55,
+    "date": "14/03/2021",
+    "kcal": 81,
+    "heartRate": 72.06874,
+    "distance": 1.30893
+  },
+  {
+    "index": 56,
+    "date": "15/03/2021",
+    "kcal": 82,
+    "heartRate": 71.21022,
+    "distance": 0.59923
+  },
+  {
+    "index": 57,
+    "date": "16/03/2021",
+    "kcal": 67,
+    "heartRate": 71.674484,
+    "distance": 0.68587
+  },
+  {
+    "index": 58,
+    "date": "17/03/2021",
+    "kcal": 81,
+    "heartRate": 74.45843,
+    "distance": 0.59763
+  },
+  {
+    "index": 59,
+    "date": "18/03/2021",
+    "kcal": 67,
+    "heartRate": 69.158844,
+    "distance": 1.427
+  },
+  {
+    "index": 60,
+    "date": "19/03/2021",
+    "kcal": 12,
+    "heartRate": 76.61667,
+    "distance": 1.78153,
+    "weight": 92.3
+  },
+  {
+    "index": 61,
+    "date": "22/04/2021",
+    "kcal": 27,
+    "heartRate": 81.376236,
+    "distance": 0.37701
+  },
+  {
+    "index": 62,
+    "date": "23/04/2021",
+    "kcal": 21,
+    "heartRate": 80.588234,
+    "distance": 0.38929
+  },
+  {
+    "index": 63,
+    "date": "25/04/2021",
+    "kcal": 82,
+    "heartRate": 82.67196,
+    "distance": 0.89175
+  },
+  {
+    "index": 64,
+    "date": "26/04/2021",
+    "kcal": 26,
+    "heartRate": 80.812805,
+    "distance": 0.40515
+  },
+  {
+    "index": 65,
+    "date": "27/04/2021",
+    "kcal": 7,
+    "heartRate": 80.11232,
+    "distance": 0.15046
+  },
+  {
+    "index": 66,
+    "date": "29/04/2021",
+    "kcal": 16,
+    "heartRate": 86.92308,
+    "distance": 0.38749
+  },
+  {
+    "index": 67,
+    "date": "07/05/2021",
+    "kcal": 1,
+    "heartRate": 78.94215,
+    "distance": 1.16342
+  },
+  {
+    "index": 68,
+    "date": "08/05/2021",
+    "kcal": 4,
+    "heartRate": 77.816666,
+    "distance": 0.70759
+  },
+  {
+    "index": 69,
+    "date": "09/05/2021",
+    "kcal": 71,
+    "heartRate": 81.90508,
+    "distance": 0.78405
+  },
+  {
+    "index": 70,
+    "date": "10/05/2021",
+    "kcal": 1,
+    "heartRate": 76.111115,
+    "distance": 0.53019,
+    "weight": 92.1
+  },
+  {
+    "index": 71,
+    "date": "11/05/2021",
+    "kcal": 27,
+    "heartRate": 78.31166,
+    "distance": 0.34363
+  },
+  {
+    "index": 72,
+    "date": "12/05/2021",
+    "kcal": 1,
+    "heartRate": 75.79592,
+    "distance": 0.39608
+  },
+  {
+    "index": 73,
+    "date": "13/05/2021",
+    "kcal": 11,
+    "heartRate": 76.53488,
+    "distance": 0.27186
+  },
+  {
+    "index": 74,
+    "date": "14/05/2021",
+    "kcal": 17,
+    "heartRate": 77.36338,
+    "distance": 0.61739004
+  },
+  {
+    "index": 75,
+    "date": "15/05/2021",
+    "kcal": 17,
+    "heartRate": 77.05426,
+    "distance": 0.15924999
+  },
+  {
+    "index": 76,
+    "date": "19/05/2021",
+    "kcal": 549,
+    "heartRate": 110.3125,
+    "distance": 1.07929
+  },
+  {
+    "index": 77,
+    "date": "20/05/2021",
+    "kcal": 13,
+    "heartRate": 79.60577,
+    "distance": 0.23577
+  },
+  {
+    "index": 78,
+    "date": "21/05/2021",
+    "kcal": 132,
+    "heartRate": 112.23404,
+    "distance": 0.22792
+  },
+  {
+    "index": 79,
+    "date": "25/05/2021",
+    "kcal": 8,
+    "heartRate": 79.28704,
+    "distance": 0.34744
+  },
+  {
+    "index": 80,
+    "date": "27/05/2021",
+    "kcal": 376,
+    "heartRate": 95.87668,
+    "distance": 1.374447,
+    "weight": 91.8
+  },
+  {
+    "index": 81,
+    "date": "28/05/2021",
+    "kcal": 12,
+    "heartRate": 83.43617,
+    "distance": 1.6117201
+  },
+  {
+    "index": 82,
+    "date": "29/05/2021",
+    "kcal": 1,
+    "heartRate": 72.75,
+    "distance": 0.77887
+  },
+  {
+    "index": 83,
+    "date": "31/05/2021",
+    "kcal": 97,
+    "heartRate": 111.625,
+    "distance": 1.25871
+  },
+  {
+    "index": 84,
+    "date": "07/06/2021",
+    "kcal": 99,
+    "heartRate": 106.96774,
+    "distance": 0.75467
+  },
+  {
+    "index": 85,
+    "date": "08/06/2021",
+    "kcal": 426,
+    "heartRate": 88.66993,
+    "distance": 0.47063002
+  },
+  {
+    "index": 86,
+    "date": "09/06/2021",
+    "kcal": 461,
+    "heartRate": 80.1657,
+    "distance": 0.77724
+  },
+  {
+    "index": 87,
+    "date": "10/06/2021",
+    "kcal": 191,
+    "heartRate": 93.38356,
+    "distance": 0.54324996
+  },
+  {
+    "index": 88,
+    "date": "11/06/2021",
+    "kcal": 470,
+    "heartRate": 98.49419,
+    "distance": 0.74655
+  },
+  {
+    "index": 89,
+    "date": "12/06/2021",
+    "kcal": 61,
+    "heartRate": 90.578125,
+    "distance": 1.06571
+  },
+  {
+    "index": 90,
+    "date": "13/06/2021",
+    "kcal": 49,
+    "heartRate": 95.675674,
+    "distance": 1.2254,
+    "weight": 92.2
+  },
+  {
+    "index": 91,
+    "date": "14/06/2021",
+    "kcal": 88,
+    "heartRate": 75.96258,
+    "distance": 1.03926
+  },
+  {
+    "index": 92,
+    "date": "15/06/2021",
+    "kcal": 2,
+    "heartRate": 72.55446,
+    "distance": 0.48291
+  },
+  {
+    "index": 93,
+    "date": "16/06/2021",
+    "kcal": 2,
+    "heartRate": 75.53333,
+    "distance": 1.05287
+  },
+  {
+    "index": 94,
+    "date": "18/06/2021",
+    "kcal": 3,
+    "heartRate": 91,
+    "distance": 1.14697
+  },
+  {
+    "index": 95,
+    "date": "20/06/2021",
+    "kcal": 97,
+    "heartRate": 80.55643,
+    "distance": 3.06274
+  },
+  {
+    "index": 96,
+    "date": "23/06/2021",
+    "kcal": 1,
+    "heartRate": 76.6,
+    "distance": 0.30795
+  },
+  {
+    "index": 97,
+    "date": "05/07/2021",
+    "kcal": 571,
+    "heartRate": 76.41752,
+    "distance": 2.358685
+  },
+  {
+    "index": 98,
+    "date": "06/07/2021",
+    "kcal": 616,
+    "heartRate": 77.063705,
+    "distance": 2.56928
+  },
+  {
+    "index": 99,
+    "date": "07/07/2021",
+    "kcal": 518,
+    "heartRate": 79.044106,
+    "distance": 1.72069
+  },
+  {
+    "index": 100,
+    "date": "08/07/2021",
+    "kcal": 501,
+    "heartRate": 75.08455,
+    "distance": 2.30619,
+    "weight": 92.3
+  },
+  {
+    "index": 101,
+    "date": "09/07/2021",
+    "kcal": 656,
+    "heartRate": 74.32261,
+    "distance": 2.64296
+  },
+  {
+    "index": 102,
+    "date": "10/07/2021",
+    "kcal": 12,
+    "heartRate": 77.67974,
+    "distance": 0.0916
+  }
+]
+}
