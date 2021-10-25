@@ -13,7 +13,7 @@ npm install -g json-server
 If you had instaled, run the command to iniciate the localhost:
 
 ``` 
-json-server jsonteste.json -p 3333
+json-server --watch jsonExample.json
 ```
 
 When you run this command, you'll can access the data API.
